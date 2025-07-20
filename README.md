@@ -104,5 +104,5 @@ bash run.sh
 ## 🔗 Connect with Me
 
 * **GitHub Repository:** [https://github.com/sagarbisht1710/HROne-Backend-task](https://github.com/sagarbisht1710/HROne-Backend-task)
-* **LinkedIn:** [https://www.linkedin.com/in/sagar-bisht1710/](https://www.linkedin.com/in/sagar-bisht1710/)
+* **LinkedIn:** [https://www.linkedin.com/in/sagar-bisht1710/](https://www.linkedin.com/in/sagar-bisht-235b25273/)
 
