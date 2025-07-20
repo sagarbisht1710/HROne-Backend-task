@@ -1,16 +1,16 @@
 # HROne Backend Task
 
-This is a sample backend project built with **FastAPI** and **MongoDB Atlas**, designed to demonstrate RESTful APIs and basic CRUD operations. It is container-ready and deployable on platforms like Render.
+This is a backend project built with **FastAPI** and **MongoDB Atlas**, demonstrating RESTful APIs and basic CRUD operations. It is container-ready and deployable on platforms like Render.
 
 ---
 
 ## 🚀 Features
-- Built using **FastAPI** for high-performance backend.
-- **MongoDB Atlas** as the database.
-- **Pydantic** for data validation.
-- Ready for deployment (e.g., Render).
-- Environment-based configuration using `.env`.
-- Modular project structure.
+- **FastAPI** for high-performance backend development.
+- **MongoDB Atlas** for database storage.
+- **Pydantic** for request/response data validation.
+- Modular and scalable project structure.
+- Environment configuration via `.env`.
+- Ready-to-deploy setup with `run.sh`.
 
 ---
 
@@ -18,8 +18,8 @@ This is a sample backend project built with **FastAPI** and **MongoDB Atlas**, d
 - **Python 3.10+**
 - **FastAPI**
 - **Uvicorn** (ASGI server)
-- **Motor** (async MongoDB driver)
-- **Pydantic** (data validation)
+- **Motor** (Async MongoDB driver)
+- **Pydantic** (Data validation)
 - **python-dotenv**
 
 ---
@@ -29,12 +29,15 @@ This is a sample backend project built with **FastAPI** and **MongoDB Atlas**, d
 
 HROne-Backend-task/
 │
-├── src/               # Application source code
-│   ├── main.py        # FastAPI entry point
-│   ├── routes/        # API route files
-│   ├── models/        # Pydantic models
-│   └── database/      # MongoDB connection logic
+├── app/               # Application code
+│   ├── core/          # Core configuration
+│   ├── db/            # Database connection logic
+│   ├── models/        # Data models
+│   ├── routers/       # API routes
+│   ├── schemas/       # Pydantic schemas
+│   └── utils/         # Helper functions
 │
+├── main.py            # FastAPI entry point
 ├── run.sh             # Script to run the application
 ├── requirements.txt   # Python dependencies
 ├── .env               # Environment variables
@@ -77,11 +80,23 @@ DB_NAME=<your-database-name>
 ### 5. Run the server
 
 ```bash
-uvicorn src.main:app --reload
+uvicorn main:app --reload
 ```
 
-The API will be available at:
-`https://hrone-backend-task.onrender.com/docs`
+The API documentation will be available at:
+
+```
+http://127.0.0.1:8000/docs
+```
 
 ---
 
+## 🌐 Deployment
+
+You can deploy this project on Render or other cloud platforms. The `run.sh` script can be used as a start command:
+
+```bash
+bash run.sh
+```
+
+````
