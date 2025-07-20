@@ -99,4 +99,11 @@ You can deploy this project on Render or other cloud platforms. The `run.sh` scr
 bash run.sh
 ```
 
-````
+---
+
+## 🔗 Connect with Me
+
+* **GitHub Repository:** [https://github.com/sagarbisht1710/HROne-Backend-task](https://github.com/sagarbisht1710/HROne-Backend-task)
+* **LinkedIn:** [https://www.linkedin.com/in/sagar-bisht1710/](https://www.linkedin.com/in/sagar-bisht1710/)
+
+```
